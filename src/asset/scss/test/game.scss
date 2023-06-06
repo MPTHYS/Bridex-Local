@@ -1,0 +1,168 @@
+.gameplay {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  .container {
+    width: 100%;
+    height: 100%;
+    .gameplays {
+      display: flex;
+      border: none;
+      background: rgba(0, 13, 41, 0.51);
+      border-radius: 18px;
+      padding: 20px;
+      width: 100%;
+      max-width: 1119px;
+      margin: auto;
+      .gameplays-manuals {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        > div {
+          > input {
+            background: none;
+            border: 1px solid rgba(255, 222, 227, 0.2);
+            border-radius: 5px;
+            height: 40px;
+            color: white;
+            width: 100%;
+            padding: 0 10px;
+          }
+        }
+        .btn {
+          border-radius: 5px;
+          background: rgb(46, 128, 243);
+          color: white;
+          font-weight: 600;
+          width: 100%;
+          height: 40px;
+          border: none;
+        }
+      }
+
+      &-manual {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 400px;
+        border-right: 1px solid rgba(255, 222, 227, 0.2);
+        padding-right: 20px;
+        .gameplays-manuals {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .gameplays-btn {
+          display: flex;
+          gap: 10px;
+          border-bottom: 1px solid rgba(255, 222, 227, 0.2);
+          padding-bottom: 5px;
+
+          > div {
+            > button {
+              background: none;
+              border-radius: 5px;
+              color: white;
+              width: 141px;
+              height: 46px;
+              font-weight: 600;
+              cursor: pointer;
+              border: none;
+              border-radius: 10px;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+        .acctive {
+          background: rgba(29, 84, 176, 0.5);
+          border-radius: 5px;
+          color: white;
+          width: 141px;
+          height: 46px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+        .gameplays-amount {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          > input {
+            background: none;
+            border: 1px solid rgba(255, 222, 227, 0.2);
+            border-radius: 5px;
+            height: 40px;
+            color: white;
+          }
+        }
+        .gameplays-payout {
+          display: flex;
+          justify-content: space-between;
+        }
+        .gameplays-input {
+          background: none;
+          border: 1px solid rgba(255, 222, 227, 0.2);
+          border-radius: 5px;
+          height: 40px;
+          color: white;
+          padding: 0 10px;
+        }
+        .gameplays-best {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+        .gameplays-bet {
+          border-radius: 5px;
+          background-color: rgb(46, 128, 243);
+          color: white;
+          font-weight: 600;
+          width: 100%;
+          height: 40px;
+          border: none;
+        }
+      }
+      &-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+        position: relative;
+        > div {
+          font-size: 30px;
+          font-weight: 600;
+        }
+        > img {
+          z-index: 2;
+        }
+        .gameplays-bg {
+          position: absolute;
+          right: -10px;
+          width: 100%;
+          height: 100%;
+          > img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .gameplays {
+      flex-direction: column-reverse;
+      .gameplays-manual {
+        max-width: 100%;
+        .gameplays-manuals {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+}

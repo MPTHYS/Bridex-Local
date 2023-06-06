@@ -1,0 +1,156 @@
+.kycs {
+  width: 100%;
+  height: 100%;
+  padding: 70px 0;
+  .container {
+    height: 100%;
+    .kyc {
+      &-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        > strong {
+          font-size: 32px;
+        }
+        > span {
+          font-size: 20px;
+        }
+      }
+      &-err {
+        margin: 5px 0px 25px;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgb(209, 166, 107), rgb(0, 26, 83));
+        border-radius: 10px;
+        padding: 2px;
+        .kyc-err-bg {
+          gap: 10px;
+          background-color: rgb(25, 26, 40);
+          border-radius: inherit;
+          width: 100%;
+          height: 100%;
+          padding: 15px;
+          display: flex;
+          align-items: center;
+        }
+        .kyc-err-el {
+          > div {
+            font-weight: 600;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .kyc-tab {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 18px;
+      padding: 30px 30px;
+      .kyc-tab-main {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+        > div {
+          > input {
+            width: 100%;
+            border-radius: 8px;
+            background: none;
+            height: 45px;
+            border: 0.1px solid rgb(168, 168, 168);
+            padding-left: 15px;
+            color: white;
+          }
+          > img {
+            position: absolute;
+            right: 10px;
+            bottom: 9px;
+          }
+        }
+        ::before {
+          content: "";
+          width: 1px;
+          height: 30px;
+          position: absolute;
+          background: rgb(152, 151, 151);
+          right: 45px;
+          top: 37px;
+        }
+      }
+      .kyc-main-user {
+        display: flex;
+        gap: 30px;
+        .kyc-main-user-name {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          > div {
+            > input {
+              width: 100%;
+              border-radius: 8px;
+              background: none;
+              height: 45px;
+              border: 0.1px solid rgb(168, 168, 168);
+              padding-left: 15px;
+              color: white;
+            }
+          }
+        }
+      }
+      .kyc-tab-number {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        > div {
+          > input {
+            width: 100%;
+            border-radius: 8px;
+            background: none;
+            height: 45px;
+            border: 0.1px solid rgb(168, 168, 168);
+            padding-left: 15px;
+            color: white;
+          }
+        }
+      }
+      .kyc-main-gender {
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        > div {
+          display: flex;
+          gap: 5px;
+        }
+      }
+      .kyc-main-check {
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
+        align-items: center;
+      }
+      .kyc-main-btn {
+        > button {
+          background: linear-gradient(
+            rgb(33, 150, 243) 0%,
+            rgb(29, 84, 176) 100%
+          );
+          border: none;
+          border-radius: 5px;
+          width: 100%;
+          max-width: 330px;
+          height: 40px;
+          color: white;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

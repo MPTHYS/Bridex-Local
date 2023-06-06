@@ -1,0 +1,116 @@
+.pupop-reg {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  color: rgb(6, 20, 47);
+  z-index: 5;
+  width: 95%;
+  max-width: 495px;
+  .pupop-title {
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  .pupop-main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 40px;
+    .pupop-main-text {
+      > h4 {
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+    .pupop-main-input {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      .pupop-main-input-otp {
+        position: relative;
+        > label {
+          width: 100%;
+        }
+        .pupop-main-input-btn {
+          background: linear-gradient(
+            rgb(33, 150, 243) 0%,
+            rgb(29, 84, 176) 100%
+          );
+          font-weight: 600;
+          border: none;
+          border-radius: 5px;
+          padding: 8px 10px;
+          color: white;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+    .pupop-main-checkbox {
+      display: flex;
+      gap: 15px;
+      font-size: 14px;
+      > div {
+        > span {
+          color: rgb(30, 92, 198);
+          font-weight: 500;
+          cursor: pointer;
+          position: relative;
+          &:hover {
+            &::before {
+              width: 100%;
+              height: 1.5px;
+              background: rgb(30, 92, 198);
+              transition: all 0.3s;
+            }
+          }
+          &::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 0;
+          }
+        }
+      }
+    }
+    .pupop-main-btn {
+      background: linear-gradient(rgb(33, 150, 243) 0%, rgb(29, 84, 176) 100%);
+      border: none;
+      border-radius: 5px;
+      width: 300px;
+      height: 40px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+    .pupop-main-end {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-size: 14px;
+      .pupop-main-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .pupop-main-right {
+        display: flex;
+        flex-direction: column;
+        > strong {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

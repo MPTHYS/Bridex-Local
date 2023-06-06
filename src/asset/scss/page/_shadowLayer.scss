@@ -1,0 +1,36 @@
+.shadowlayer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+
+    &.active {
+        z-index: 999;
+    }
+}
+.shadowlayer-block {
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+    opacity: 0;
+    transition: 0.3s;
+
+    &.active {
+        opacity: 0.8;
+        // background-color: rgba(0, 0, 0, 0.274);
+        background: #001923;
+        
+    }
+}
+.blockscroll {
+    height: 100%;
+    overflow-y: hidden;
+    margin-right: 3px;
+}
+.vicontent {
+    .shadowlayer {
+        top: 0;
+        left: 0;
+    }
+}

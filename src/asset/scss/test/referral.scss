@@ -1,0 +1,106 @@
+.referrals {
+  width: 100%;
+  height: 100%;
+  padding: 70px 0;
+  .container {
+    height: 100%;
+    .referral {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      &-main {
+        border: 2px solid rgba(14, 172, 233, 0.2);
+        background: linear-gradient(
+          115.36deg,
+          rgba(0, 26, 83, 0.4) 33.92%,
+          rgba(8, 2, 28, 0) 99.86%
+        );
+        border-radius: 18px;
+        padding: 15px 20px;
+        > h2 {
+          text-align: center;
+          font-size: 38px;
+          padding-bottom: 40px;
+          font-weight: bold;
+        }
+        &-tab {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          text-align: center;
+          background: rgba(0, 26, 83, 0.8);
+          border-radius: 10px;
+          max-width: 600px;
+          box-shadow: rgba(255, 244, 244, 0.14) -1px -1px 15px 7px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+          padding: 15px 0;
+          > h3 {
+            padding-top: 15px;
+            font-size: 26px;
+          }
+          .referral-main-inbut {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 0 20px;
+            > input {
+              width: 100%;
+              height: 40px;
+              border-radius: 7px;
+              color: rgb(6, 20, 47);
+              padding-left: 15px;
+              cursor: pointer;
+            }
+            > button {
+              width: 100%;
+              max-width: 250px;
+              text-align: center;
+              padding: 5px 20px;
+              margin: 0px auto;
+              height: 40px;
+              background: linear-gradient(
+                rgb(33, 150, 243) 0%,
+                rgb(29, 84, 176) 100%
+              );
+              border-radius: 5px;
+              text-transform: uppercase;
+              color: rgb(255, 255, 255);
+              font-weight: 600;
+              border: none;
+            }
+            .referral-main-mxh {
+              display: flex;
+              justify-content: center;
+              gap: 10px;
+              > div {
+                color: rgb(75, 189, 153);
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .referral-main-note {
+          display: flex;
+          flex-direction: column;
+          padding: 100px 40px;
+          > div {
+            display: flex;
+            gap: 3px;
+            > p {
+              color: red;
+              font-weight: 500;
+            }
+            > span {
+              padding-left: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,210 @@
+.farmings {
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .banner {
+    width: 100%;
+    height: 100%;
+    &-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      .banner-element {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        > h1 {
+          font-weight: bold;
+        }
+      }
+      .banner-items {
+        flex: 1;
+        text-align: center;
+        width: 100%;
+        > img {
+          width: 650px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 50px 0;
+    .banner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .banner-main {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 70%;
+    }
+    .banner-items {
+      > img {
+        width: 100% !important;
+      }
+    }
+    .banner-text {
+      flex-wrap: wrap;
+    }
+  }
+}
+.banner-text1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+  .banner-text-table {
+    width: 100%;
+    // max-width: 330px;
+    min-width: 320px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 13, 41, 0.71);
+    .banner-text-title1 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 15px;
+      background: linear-gradient(rgb(33, 150, 243) 0%, rgb(29, 84, 176) 100%);
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      > h2 {
+        font-weight: bold;
+      }
+    }
+    .banner-text-main {
+      border: 1px solid rgb(29, 84, 176);
+      margin: 10px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 13px;
+      > h5 {
+        margin-bottom: 0;
+      }
+      > div {
+        > h5 {
+          color: rgb(33, 150, 243);
+          margin-bottom: 0;
+        }
+      }
+    }
+    .banner-text-element {
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+      padding: 0px 10px 10px 10px;
+      > div {
+        > div {
+          font-size: 24px;
+        }
+      }
+    }
+    .banner-text-element1 {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      align-items: center;
+      padding: 0px 10px 10px 10px;
+      > div {
+        flex: 2;
+        > div {
+          font-size: 24px;
+        }
+      }
+      .banner-text-btn2 {
+        flex: 1;
+        > button {
+          background: none;
+          border-color: rgb(33, 150, 243);
+          border-radius: 5px;
+          color: white;
+          font-weight: 600;
+          height: 40px;
+          width: 100%;
+        }
+      }
+    }
+    .banner-text-test {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 10px;
+      .banner-text-time {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+      }
+      .banner-text-btn {
+        border: none;
+        border-radius: 5px;
+        background: linear-gradient(
+          rgb(33, 150, 243) 0%,
+          rgb(29, 84, 176) 100%
+        );
+        color: white;
+        height: 50px;
+        font-weight: 600;
+      }
+    }
+    .banner-text-btn1 {
+      border: none;
+      border-radius: 5px;
+      background: linear-gradient(rgb(33, 150, 243) 0%, rgb(29, 84, 176) 100%);
+      color: white;
+      height: 35px;
+      font-weight: 600;
+    }
+    .farming-data {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 10px;
+      &-farm {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        > div {
+          > div {
+            display: flex;
+            gap: 3px;
+            align-items: center;
+            font-weight: 600;
+          }
+          > strong {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          > span {
+            font-weight: 600;
+          }
+        }
+      }
+      &-btn {
+        flex: 1;
+        > button {
+          background: rgb(39, 161, 125);
+          border: none;
+          border-radius: 5px;
+          color: white;
+          font-weight: 600;
+          height: 40px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

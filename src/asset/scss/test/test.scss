@@ -1,0 +1,8 @@
+.texts{
+    display: flex;
+    gap: 30px;
+    // align-items: center;
+    >p {
+        color: red;
+    }
+}

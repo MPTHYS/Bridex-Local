@@ -1,0 +1,188 @@
+.exchanges-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  .exchanges-table {
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .exchange-table-title {
+      > div {
+        font-weight: bold;
+      }
+    }
+    .exchange-table-input {
+      display: flex;
+      align-items: center;
+      position: relative;
+      > input {
+        width: 100%;
+        height: 50px;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 5px;
+        background: none;
+        padding-left: 10px;
+        color: white;
+      }
+      .exchange-pupop {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      .exchange-pupop1 {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      .exchange-table-max {
+        position: absolute;
+        right: 120px;
+        border: none;
+        border-radius: 10px;
+        background-color: bisque;
+        padding: 5px;
+        color: rgb(139, 137, 137);
+      }
+      .exchange-table-img {
+        position: absolute;
+        right: 30px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+      .exchange-table-icon {
+        position: absolute;
+        right: 10px;
+      }
+    }
+    .exchange-table-swap {
+      text-align: center;
+    }
+    .exchange-table-button {
+      text-align: center;
+      .exchange-table-btn {
+        background: linear-gradient(
+          rgb(33, 150, 243) 0%,
+          rgb(29, 84, 176) 100%
+        );
+        border: none;
+        border-radius: 10px;
+        max-width: 250px;
+        width: 100%;
+        height: 55px;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.table-pupop {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(131, 129, 129);
+  height: auto;
+  width: 500px;
+  padding: 20px;
+  z-index: 10;
+  .pupop {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .pupop-swap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .pupop-input {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      > input {
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        height: 30px;
+        background-color: rgb(87, 86, 86);
+      }
+      > img {
+        position: absolute;
+        right: 5px;
+      }
+    }
+    .pupop-total {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      &-text {
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        padding: 2px 12px;
+        font-weight: 500;
+      }
+    }
+    .pupop-coin {
+      display: flex;
+      justify-content: space-around;
+      gap: 13px;
+      > div {
+        border: 1px solid rgb(226, 222, 222);
+        border-radius: 5px;
+        background-color: rgb(131, 129, 129);
+        padding: 3px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+    }
+    .pupop-scroll {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0 2px;
+      height: 300px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #696767;
+        border-radius: 10px;
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid;
+        padding-bottom: 5px;
+      }
+      > span {
+        color: darkgrey;
+      }
+    }
+  }
+}
+.overlay {
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  inset: 0;
+  z-index: 1;
+  opacity: 0.6;
+}

@@ -1,0 +1,25 @@
+:root {
+    --primary: #011358;
+    --secondary: #0b2072;
+    --quaternary: #02273b;
+    --white: #ffffff;
+    --border: rgba(255, 255, 255, 0.15);
+    --text: rgba(255, 255, 255, 0.7);
+    --swiper-pagination: rgba(255, 255, 255, 0.2);
+    // font size
+    --text-size: 16px;
+    --text-md: 22px;
+    --text-xl: 24px;
+    --text-2xl: 36px;
+    --text-3xl: 64px;
+}
+
+@media all and (max-width: 600px) {
+     :root {
+        --text-size: 14px;
+        --text-md: 20px;
+        --text-xl: 22px;
+        --text-2xl: 26px;
+        --text-3xl: 48px;
+    }
+}
